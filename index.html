@@ -5,29 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Juan Carlos Ortiz</title>
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
+    <header class="header">
+      <div class="container">
+        <div class="item header">item1</div>
+        <div class="item left">item2</div>
+        <div class="item contenido">item3</div>
+        <div class="item footer">item4</div>
+      </div>
       <div>
-        <figure>
-          <img src="" alt="Logo" />
+        <figure class="logo">
+          <img src="./src/images/logo.png" alt="Logo" />
         </figure>
-        <nav>
+        <nav class="menu">
           <ol>
             <li>
-              <a href="#portafolio">Portafolio</a>
+              <a class="link" href="#portafolio">Portafolio</a>
             </li>
             <li>
-              <a href="#eventos">Experiencia</a>
+              <a class="link" href="#eventos">Experiencia</a>
             </li>
             <li>
-              <a href="#contacto">Trabajemos juntos</a>
+              <a class="link" href="#contacto">Trabajemos juntos</a>
             </li>
           </ol>
         </nav>
       </div>
     </header>
-    <section id="portafolio">
+    <section class="hero" id="portafolio">
       <h1>
         Hola! Soy <strong>Juan Carlos</strong>, desarrollador <br />
         <strong>Javascript</strong> con pasión por la
@@ -40,15 +51,15 @@
         alt="Imagen de portada"
       />
     </section>
-    <section id="eventos">
+    <section class="portfolio" id="eventos">
       <h2>Portafolio (Proyectos destacados)</h2>
-      <article>
-        <h3>Abancay Segura</h3>
-        <h6>Angular</h6>
-        <p>
+      <article class="project">
+        <h3 class="project-title">Abancay Segura</h3>
+        <h6 class="project-course">Angular</h6>
+        <p class="project-date">
           <small> <strong>Fecha:</strong> 01/06/2019 </small>
         </p>
-        <p>
+        <p class="project-url">
           <small>
             <strong>Puedes verlo en:</strong
             ><a
@@ -78,35 +89,38 @@
             </li>
           </ul>
         </article>
-        <img
-          src="./src/images/abancaysegura.jpg"
-          width="500"
-          height="250"
-          alt="abancay segura logo"
-        />
+        <figure class="project-imageContainer">
+          <img
+            class="project-image"
+            src="./src/images/abancaysegura.jpg"
+            width="500"
+            height="250"
+            alt="abancay segura logo"
+          />
+        </figure>
       </article>
     </section>
     <section>
       <h2>Mas sobre mi experiencia</h2>
-      <article>
-        <figure>
-          <img src="" alt="primera foto" />
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img class="event-image" src="" alt="primera foto" />
         </figure>
-        <h3>Flisol 2017</h3>
+        <h3 class="event-title">Flisol 2017</h3>
         <figure>
           <img src="" alt="segunda foto" />
         </figure>
         <h3>Escuela de invierno</h3>
       </article>
     </section>
-    <section id="contacto">
-      <form action="">
+    <section id="contacto" class="contact">
+      <form action="" class="form-email">
         <h3>Creamos algo juntos?</h3>
         <input type="email" placeholder="Déjame tu email" />
         <input type="submit" value="Enviar" />
       </form>
     </section>
-    <footer>
+    <footer class="footer">
       Footer
     </footer>
   </body>
